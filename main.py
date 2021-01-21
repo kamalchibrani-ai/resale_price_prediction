@@ -62,4 +62,4 @@ def predict(request:Request , Year: int = Form(...),
                                           context={'request': request,
                                                    'prediction_text': "You Can Sell The Car at {} lakhs".format(output)})
 if __name__ == '__main__':
-    uvicorn.run(app , host='127.0.0.1' , port=8080)
+    uvicorn.run(app , host='0.0.0.0', port=8080)
